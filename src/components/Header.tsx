@@ -34,12 +34,17 @@ const Header: FunctionComponent = () => {
           <img className={styles.hrIcon} alt="" src="/hr.svg" />
           <div className={styles.bottom}>
             <div className={styles.textFieldButton}>
-              <div className={styles.textField}>
-                <div className={styles.icon2}>map-marker-alt</div>
-                <div className={styles.modulus}>Enter Your Address</div>
+              <div className={styles.wrapperTextField}>
+                <input
+                  className={styles.textField}
+                  name="Food Search"
+                  value="Finde den Fressen"
+                  placeholder="Food Search Placeholder"
+                  type="text"
+                />
               </div>
               <button className={styles.button}>
-                <div className={styles.icon3}>SEARCH</div>
+                <div className={styles.icon2}>SEARCH</div>
                 <b className={styles.abs}>Find Food</b>
               </button>
             </div>

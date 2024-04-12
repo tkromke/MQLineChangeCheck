@@ -24,8 +24,8 @@
 }
 @media screen and (max-width: 1225px) {
   .flashDeals {
-    justify-content: center;
     grid-template-columns: repeat(2, minmax(268px, 464px));
+    justify-content: center;
   }
 }
 @media screen and (max-width: 850px) {

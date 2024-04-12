@@ -118,45 +118,42 @@
   max-height: 100%;
   margin-top: -1px;
 }
-.icon2,
-.modulus {
-  position: relative;
-  line-height: 140%;
-  white-space: nowrap;
-}
-.icon2 {
-  width: 18px;
-  display: inline-block;
-  min-width: 18px;
-}
-.modulus {
-  font-size: var(--button-bold-size);
-  font-family: var(--body-1);
-  color: var(--theme-gray-500);
-}
 .textField {
+  outline: 0;
+  padding: var(--padding-6xs) var(--padding-366xl) var(--padding-5xs)
+    var(--padding-base);
+  font-family: var(--font-font-awesome-5-free);
+  font-size: var(--font-size-5xl);
+  color: var(--color-salmon-100);
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background: 0 0;
+}
+.wrapperTextField {
+  position: relative;
+  border: 0;
+  background-color: var(--theme-gray-100);
+  height: 49px;
   flex: 1;
   border-radius: var(--br-5xs);
-  background-color: var(--theme-gray-100);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-6xs) var(--padding-366xl) var(--padding-5xs)
-    var(--padding-base);
   box-sizing: border-box;
-  gap: var(--gap-xs);
+  min-width: 250px;
   max-width: 100%;
 }
 .abs,
-.icon3 {
+.icon2 {
   position: relative;
   line-height: 100%;
   display: inline-block;
   color: var(--theme-white);
   text-align: center;
 }
-.icon3 {
+.icon2 {
   width: 14px;
   font-size: var(--font-size-sm);
   font-family: var(--font-font-awesome-5-free);
@@ -205,12 +202,10 @@
   justify-content: flex-start;
   padding: var(--padding-5xl);
   box-sizing: border-box;
+  position: sticky;
   top: 0;
   z-index: 99;
-  position: sticky;
   max-width: 100%;
-  font-size: var(--font-size-5xl);
-  color: var(--color-salmon-100);
 }
 .orderCard {
   border-radius: var(--br-base);
@@ -268,14 +263,10 @@
     font-size: var(--font-size-25xl);
     line-height: 53px;
   }
-  .header,
-  .textField {
-    padding-right: var(--padding-173xl);
-    box-sizing: border-box;
-  }
   .header {
     padding-left: var(--padding-36xl);
     padding-right: var(--padding-36xl);
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
@@ -287,7 +278,6 @@
     font-size: var(--button-bold-size);
     line-height: 21px;
   }
-  .textField,
   .top {
     padding-right: var(--padding-xl);
     box-sizing: border-box;

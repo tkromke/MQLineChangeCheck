@@ -1,0 +1,123 @@
+.imageIcon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.text {
+  margin: 0;
+  width: 728px;
+  position: relative;
+  font-size: inherit;
+  line-height: 97.5%;
+  font-weight: 900;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.icon,
+.text1 {
+  position: relative;
+  line-height: 100%;
+  color: var(--theme-white);
+  text-align: center;
+}
+.text1 {
+  flex: 1;
+  font-size: var(--button-bold-size);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: var(--button-bold);
+}
+.icon {
+  align-self: stretch;
+  font-size: var(--font-size-base);
+  font-family: var(--font-font-awesome-5-free);
+  display: inline-block;
+  min-width: 10px;
+}
+.iconWrapper {
+  width: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.button,
+.buttonWrapper,
+.cta,
+.iconWrapper {
+  display: flex;
+  box-sizing: border-box;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xl) var(--padding-6xl);
+  background-color: var(--yellow-button);
+  width: 233px;
+  border-radius: var(--br-5xs);
+  background: linear-gradient(93.41deg, #f17228, #f15e28);
+  box-shadow: var(--button-shadow);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+.buttonWrapper,
+.cta {
+  max-width: 100%;
+}
+.buttonWrapper {
+  width: 728px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 var(--padding-10xs);
+}
+.cta {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-72xl) var(--padding-xl) var(--padding-56xl);
+  position: relative;
+  gap: var(--gap-43xl);
+  text-align: center;
+  font-size: var(--font-size-38xl);
+  color: var(--theme-white);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 850px) {
+  .text {
+    font-size: var(--font-size-27xl);
+    line-height: 44px;
+  }
+  .cta {
+    gap: var(--gap-12xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .text {
+    font-size: var(--font-size-15xl);
+    line-height: 33px;
+  }
+  .cta {
+    gap: var(--gap-mini);
+    padding-top: var(--padding-40xl);
+    padding-bottom: var(--padding-30xl);
+    box-sizing: border-box;
+  }
+}

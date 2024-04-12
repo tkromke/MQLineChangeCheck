@@ -1,0 +1,228 @@
+.maskGroupIcon {
+  height: 30px;
+  width: 28px;
+  position: relative;
+  object-fit: contain;
+}
+.food {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 60.8px;
+}
+.g {
+  font-size: var(--font-size-6xl-5);
+  font-weight: 900;
+  font-family: var(--button-bold);
+}
+.on,
+.wag {
+  letter-spacing: -0.02em;
+}
+.wagon {
+  position: relative;
+  line-height: 120%;
+  color: var(--theme-primary);
+  display: inline-block;
+  min-width: 90.5px;
+}
+.logo,
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.or {
+  align-items: flex-start;
+  padding: 0 var(--padding-102xl) 0 0;
+}
+.logo {
+  width: 197px;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs-5);
+  text-align: left;
+  font-size: var(--font-size-12xl-1);
+}
+.deliverTo {
+  width: 83px;
+  position: relative;
+  line-height: 100%;
+  display: inline-block;
+  min-width: 83px;
+}
+.mapMarkerAlt {
+  width: 14px;
+  min-width: 14px;
+}
+.currentLocation,
+.mapMarkerAlt,
+.mohammadpurBusStand {
+  position: relative;
+  line-height: 140%;
+  display: inline-block;
+}
+.currentLocation {
+  width: 142px;
+}
+.mohammadpurBusStand {
+  flex: 1;
+  min-width: 196px;
+}
+.deliverAddress,
+.output,
+.xnor {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.output {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-10xs);
+  min-width: 291px;
+  color: var(--theme-gray-800);
+  font-family: var(--body-1);
+}
+.deliverAddress,
+.xnor {
+  align-items: center;
+}
+.xnor {
+  flex: 1;
+  justify-content: center;
+  gap: var(--gap-4xs);
+  min-width: 305px;
+  color: var(--theme-primary);
+  font-family: var(--font-font-awesome-5-free);
+}
+.deliverAddress {
+  width: 565px;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  color: var(--theme-gray-800);
+}
+.search,
+.searchFood {
+  position: relative;
+  line-height: 100%;
+  display: inline-block;
+}
+.search {
+  width: 18px;
+  min-width: 18px;
+}
+.searchFood {
+  flex: 1;
+  font-family: var(--button-bold);
+  color: var(--theme-gray-800);
+  min-width: 98px;
+}
+.searchParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.login,
+.user {
+  position: relative;
+  line-height: 100%;
+  background: linear-gradient(92.84deg, #ffb800, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  min-width: 16px;
+}
+.login {
+  flex: 1;
+  font-family: var(--button-bold);
+  min-width: 44px;
+}
+.searchLoginButton,
+.topNav,
+.userParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userParent {
+  flex: 0.5932;
+  border-radius: var(--br-5xs);
+  background-color: var(--theme-white);
+  box-shadow: 0 5px 10px rgba(255, 173, 0, 0.26),
+    0 20px 40px rgba(255, 173, 0, 0.29);
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-5xl);
+  gap: var(--gap-3xs);
+}
+.searchLoginButton,
+.topNav {
+  width: 272px;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+  color: var(--theme-primary);
+  font-family: var(--font-font-awesome-5-free);
+}
+.topNav {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-color: var(--theme-white);
+  box-shadow: 0 5px 10px rgba(255, 173, 0, 0.26),
+    0 20px 40px rgba(255, 173, 0, 0.29);
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-201xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--button-bold-size);
+  color: var(--theme-warning);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 1525px) {
+  .topNav {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .topNav {
+    padding-left: var(--padding-91xl);
+    padding-right: var(--padding-91xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .mapMarkerAlt {
+    width: 100%;
+    height: 14px;
+  }
+  .deliverAddress,
+  .output,
+  .xnor {
+    flex-wrap: wrap;
+  }
+  .topNav {
+    padding-left: var(--padding-36xl);
+    padding-right: var(--padding-36xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .or,
+  .topNav {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .topNav {
+    padding-left: var(--padding-xl);
+  }
+}

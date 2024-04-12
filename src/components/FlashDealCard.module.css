@@ -1,0 +1,153 @@
+.imageIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: -0.1px;
+  bottom: 0;
+  max-height: 100%;
+  object-fit: cover;
+}
+.h2,
+.number,
+.off {
+  position: relative;
+  display: inline-block;
+}
+.number {
+  line-height: 62px;
+  min-width: 73px;
+}
+.h2,
+.off {
+  line-height: 120%;
+}
+.h2 {
+  margin: 0;
+  height: 32px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  flex-shrink: 0;
+  min-width: 31px;
+}
+.off {
+  font-size: var(--headline-6-bold-size);
+  min-width: 28px;
+}
+.percentageSymbol {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.discount,
+.foodPhoto,
+.outputCombiner,
+.percentageSymbol {
+  display: flex;
+  justify-content: flex-start;
+}
+.outputCombiner {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  font-size: var(--headline-5-bold-size);
+}
+.discount,
+.foodPhoto {
+  flex-direction: row;
+}
+.discount {
+  border-radius: 0 var(--br-13xl) 0 0;
+  background-color: var(--theme-primary);
+  align-items: flex-start;
+  padding: var(--padding-3xs) var(--padding-lg) var(--padding-2xs);
+  z-index: 1;
+}
+.foodPhoto {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--theme-white);
+  overflow: hidden;
+  align-items: flex-end;
+  position: relative;
+}
+.daysRemaining,
+.greysVage {
+  position: relative;
+  line-height: 120%;
+}
+.greysVage {
+  display: inline-block;
+  min-width: 106px;
+}
+.daysRemaining {
+  font-size: var(--headline-6-bold-size);
+  font-family: var(--button-bold);
+  color: var(--theme-warning);
+  text-align: left;
+}
+.daysRemainingWrapper,
+.flashDealCard,
+.textsBadge {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.daysRemainingWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--color-chocolate-400);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  white-space: nowrap;
+}
+.daysRemainingWrapper:hover {
+  background-color: var(--color-chocolate-300);
+}
+.flashDealCard,
+.textsBadge {
+  flex-direction: column;
+  gap: var(--gap-sm);
+  font-size: var(--headline-6-bold-size);
+  color: var(--theme-gray-800);
+}
+.flashDealCard {
+  height: 415px;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--headline-2-bold-size);
+  color: var(--theme-white);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 850px) {
+  .number {
+    font-size: var(--font-size-35xl);
+    line-height: 58px;
+  }
+  .h2 {
+    font-size: var(--font-size-9xl);
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .number {
+    font-size: var(--font-size-22xl);
+    line-height: 43px;
+  }
+  .h2 {
+    font-size: var(--font-size-2xl);
+    line-height: 25px;
+  }
+  .greysVage,
+  .off {
+    font-size: var(--button-bold-size);
+    line-height: 21px;
+  }
+  .flashDealCard {
+    gap: var(--gap-base);
+  }
+}

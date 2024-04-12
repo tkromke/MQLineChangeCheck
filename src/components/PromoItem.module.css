@@ -1,0 +1,218 @@
+.imageIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.icon {
+  position: relative;
+  font-size: var(--button-bold-size);
+  line-height: 22px;
+  font-family: var(--font-font-awesome-5-free);
+  color: var(--theme-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 22px;
+}
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.text {
+  position: relative;
+  font-size: var(--headline-6-bold-size);
+  line-height: 120%;
+  display: inline-block;
+  font-family: var(--button-bold);
+  color: var(--theme-white);
+  text-align: left;
+  min-width: 74px;
+}
+.discount {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--theme-warning);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.icon1 {
+  position: relative;
+  font-size: var(--button-bold-size);
+  line-height: 22px;
+  font-family: var(--font-font-awesome-5-free);
+  color: var(--theme-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 18px;
+}
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.text1 {
+  position: relative;
+  font-size: var(--headline-6-bold-size);
+  line-height: 120%;
+  display: inline-block;
+  font-family: var(--button-bold);
+  color: var(--theme-white);
+  text-align: left;
+  min-width: 41px;
+}
+.fast {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--theme-primary);
+  border-radius: var(--br-5xs);
+  gap: var(--gap-3xs);
+}
+.badge,
+.fast,
+.foodPhoto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.badge {
+  gap: var(--gap-5xs);
+  z-index: 1;
+}
+.foodPhoto {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--theme-white);
+  overflow: hidden;
+  padding: var(--padding-5xl);
+  position: relative;
+}
+.restaruantLogoIcon {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  object-fit: cover;
+}
+.icon2,
+.name,
+.text2 {
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 105px;
+}
+.icon2,
+.text2 {
+  line-height: 106%;
+  min-width: 25px;
+}
+.text2 {
+  line-height: 120%;
+  font-family: var(--button-bold);
+  min-width: 22px;
+}
+.imageNameReview,
+.nameReview,
+.review {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.review {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+  color: var(--theme-primary);
+  font-family: var(--font-font-awesome-5-free);
+}
+.imageNameReview,
+.nameReview {
+  flex-direction: column;
+  gap: var(--gap-9xs);
+}
+.imageNameReview {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xl);
+}
+.text3 {
+  position: relative;
+  font-size: var(--headline-6-bold-size);
+  line-height: 120%;
+  font-family: var(--button-bold);
+  color: var(--theme-warning);
+  text-align: left;
+}
+.badge1,
+.imageNameReviewBadge,
+.promoItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.badge1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--color-chocolate-400);
+  border-radius: var(--br-base);
+  flex-direction: row;
+  white-space: nowrap;
+}
+.badge1:hover {
+  background-color: var(--color-chocolate-300);
+}
+.imageNameReviewBadge,
+.promoItem {
+  flex-direction: column;
+  gap: var(--gap-13xl);
+}
+.promoItem {
+  height: 463px;
+  width: 357px;
+  border-radius: var(--br-base);
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--headline-6-bold-size);
+  color: var(--theme-gray-800);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 450px) {
+  .icon2,
+  .name,
+  .text,
+  .text1,
+  .text2 {
+    font-size: var(--button-bold-size);
+    line-height: 21px;
+  }
+  .icon2,
+  .text2 {
+    line-height: 19px;
+  }
+  .text2 {
+    line-height: 21px;
+  }
+}

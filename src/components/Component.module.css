@@ -1,0 +1,131 @@
+.imageTitleChild {
+  width: 283.4px;
+  height: 283px;
+  position: relative;
+  border-radius: var(--br-base);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.icon,
+.name,
+.text {
+  position: relative;
+  line-height: 120%;
+}
+.icon,
+.text {
+  display: inline-block;
+}
+.icon {
+  width: 14px;
+  min-width: 14px;
+}
+.text {
+  font-size: var(--headline-6-bold-size);
+  font-family: var(--button-bold);
+  min-width: 120px;
+}
+.location,
+.nameLocation {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.location {
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--button-bold-size);
+  color: var(--theme-primary);
+  font-family: var(--font-font-awesome-5-free);
+}
+.nameLocation {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.b {
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 54px;
+  white-space: nowrap;
+}
+.imageTitle,
+.nameLocationPrice,
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.price {
+  flex-direction: row;
+  color: var(--theme-gray-900);
+}
+.imageTitle,
+.nameLocationPrice {
+  align-self: stretch;
+  flex-direction: column;
+}
+.nameLocationPrice {
+  padding: 0 var(--padding-122xl-4) 0 0;
+  gap: var(--gap-5xs);
+}
+.imageTitle {
+  gap: var(--gap-base);
+}
+.text1 {
+  width: 86px;
+  position: relative;
+  font-size: var(--button-bold-size);
+  line-height: 100%;
+  display: inline-block;
+  font-family: var(--button-bold);
+  color: var(--theme-white);
+  text-align: center;
+  min-width: 86px;
+}
+.button,
+.div {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xl) var(--padding-xl);
+  background-color: var(--theme-warning);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  box-shadow: var(--shadow-21);
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: var(--color-chocolate-100);
+}
+.div {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  min-width: 278px;
+  max-width: 283px;
+  text-align: left;
+  font-size: var(--headline-6-bold-size);
+  color: var(--theme-gray-800);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .name,
+  .text {
+    font-size: var(--button-bold-size);
+    line-height: 21px;
+  }
+  .nameLocationPrice {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

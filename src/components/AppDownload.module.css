@@ -1,0 +1,198 @@
+.background {
+  height: 7216px;
+  width: 7216px;
+  position: absolute;
+  margin: 0 !important;
+  top: -6707px;
+  right: -2836px;
+  border-radius: 50%;
+  background-color: var(--color-blanchedalmond);
+  z-index: 2;
+}
+.imageIcon {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  transform: scale(1.25);
+}
+.wrapperImage {
+  height: 759.3px;
+  width: 602.8px;
+  max-width: calc(100% - 575px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body,
+.title,
+.wrapperImage {
+  position: relative;
+  z-index: 1;
+}
+.title {
+  margin: 0;
+  font-size: inherit;
+  line-height: 106%;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(92.84deg, #ffb800, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body {
+  align-self: stretch;
+  font-size: var(--button-bold-size);
+  line-height: 140%;
+  font-family: var(--body-1);
+}
+.titleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.googlePlayDownload {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  transform: scale(2.333);
+}
+.wrapperGooglePlayDownload {
+  height: 60px;
+  width: 202.5px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  min-height: 60px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appStoreDownloadButton {
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: normal;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  transform: scale(2.333);
+}
+.wrapperAppStoreDownloadBut {
+  height: 60px;
+  width: 180px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  mix-blend-mode: normal;
+  min-height: 60px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperGooglePlayDownloadParent {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.appDownload,
+.frameParent,
+.treeStructure,
+.wrapperGooglePlayDownloadParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+}
+.appDownload,
+.treeStructure {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.treeStructure {
+  width: 432px;
+  flex-direction: column;
+  padding: var(--padding-37xl-3) 0 0;
+  max-width: calc(100% - 746px);
+}
+.appDownload {
+  margin-left: -1px;
+  margin-bottom: 80px;
+  align-self: stretch;
+  height: 589px;
+  background: linear-gradient(261.24deg, #ffae00, #ff8a00);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-42xl-7) var(--padding-329xl-9) var(--padding-189xl);
+  position: relative;
+  gap: var(--gap-124xl-3);
+  max-width: 100%;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--headline-2-bold-size);
+  color: var(--color-gray-100);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 1225px) {
+  .imageIcon,
+  .treeStructure {
+    display: none;
+    max-width: 100%;
+  }
+  .appDownload {
+    gap: var(--gap-53xl);
+    padding: var(--padding-21xl) var(--padding-155xl) var(--padding-116xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: var(--font-size-35xl);
+    line-height: 58px;
+  }
+  .wrapperGooglePlayDownloadParent {
+    flex-wrap: wrap;
+  }
+  .appDownload {
+    height: auto;
+    gap: var(--gap-17xl);
+    padding: var(--padding-7xl) var(--padding-68xl) var(--padding-69xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--font-size-22xl);
+    line-height: 43px;
+  }
+  .frameParent {
+    gap: var(--gap-xl);
+  }
+  .appDownload {
+    gap: var(--gap-lg);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

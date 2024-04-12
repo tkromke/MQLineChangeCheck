@@ -1,0 +1,39 @@
+.flashDeals,
+.flashDealsWrapper {
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.flashDeals {
+  width: 1475.7px;
+  display: grid;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  grid-template-columns: repeat(4, minmax(268px, 1fr));
+}
+.flashDealsWrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-61xl) var(--padding-3xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--headline-2-bold-size);
+  color: var(--theme-white);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 1225px) {
+  .flashDeals {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(268px, 464px));
+  }
+}
+@media screen and (max-width: 850px) {
+  .flashDeals {
+    grid-template-columns: minmax(268px, 1fr);
+  }
+  .flashDealsWrapper {
+    padding-bottom: var(--padding-33xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,303 @@
+.group11,
+.imageIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 661px;
+  object-fit: cover;
+}
+.imageIcon {
+  top: 182px;
+  left: 1098px;
+  width: 604px;
+  height: 505px;
+  object-fit: contain;
+  z-index: 1;
+}
+.group11Parent {
+  height: 687px;
+  width: 1918px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -67px;
+  left: 0;
+}
+.areYouStarving {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  text-shadow: var(--object-shadow-2);
+}
+.withinAFew {
+  position: relative;
+  font-size: var(--headline-6-bold-size);
+  line-height: 120%;
+  color: var(--color-dimgray-100);
+  display: inline-block;
+  max-width: 100%;
+}
+.title {
+  width: 671px;
+  border-radius: var(--br-base);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-mini);
+  max-width: 100%;
+}
+.compare,
+.icon {
+  position: relative;
+  font-size: var(--button-bold-size);
+  line-height: 100%;
+  display: inline-block;
+  color: var(--theme-warning);
+  text-align: left;
+}
+.icon {
+  width: 23px;
+  font-family: var(--font-font-awesome-5-free);
+  min-width: 23px;
+}
+.compare {
+  font-family: var(--button-bold);
+  min-width: 67px;
+}
+.tab1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-5xl);
+  background-color: var(--color-chocolate-200);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.icon1,
+.text {
+  position: relative;
+  line-height: 100%;
+  display: inline-block;
+}
+.icon1 {
+  width: 16px;
+  min-width: 16px;
+}
+.text {
+  font-family: var(--button-bold);
+  min-width: 55px;
+}
+.tab2,
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-5xl);
+  gap: var(--gap-3xs);
+}
+.top {
+  background-color: var(--theme-white);
+  padding: var(--padding-5xl) var(--padding-528xl) var(--padding-5xl)
+    var(--padding-5xl);
+  gap: var(--gap-5xs);
+}
+.hrIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  margin-top: -1px;
+}
+.icon2,
+.modulus {
+  position: relative;
+  line-height: 140%;
+  white-space: nowrap;
+}
+.icon2 {
+  width: 18px;
+  display: inline-block;
+  min-width: 18px;
+}
+.modulus {
+  font-size: var(--button-bold-size);
+  font-family: var(--body-1);
+  color: var(--theme-gray-500);
+}
+.textField {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--theme-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) var(--padding-366xl) var(--padding-5xs)
+    var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.abs,
+.icon3 {
+  position: relative;
+  line-height: 100%;
+  display: inline-block;
+  color: var(--theme-white);
+  text-align: center;
+}
+.icon3 {
+  width: 14px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-font-awesome-5-free);
+  min-width: 14px;
+}
+.abs {
+  flex: 1;
+  font-size: var(--button-bold-size);
+  font-family: var(--button-bold);
+  min-width: 79px;
+  white-space: nowrap;
+}
+.button,
+.textFieldButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xl) var(--padding-29xl);
+  background-color: var(--yellow-button);
+  width: 199px;
+  border-radius: var(--br-5xs);
+  background: linear-gradient(95.71deg, #ff7a7a, #f75900);
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.textFieldButton {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.bottom,
+.orderCard {
+  align-self: stretch;
+  flex-direction: column;
+}
+.bottom {
+  background-color: var(--theme-white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+  font-size: var(--font-size-5xl);
+  color: var(--color-salmon-100);
+}
+.orderCard {
+  border-radius: var(--br-base);
+  box-shadow: 0 5px 10px rgba(255, 173, 0, 0.26),
+    0 20px 40px rgba(255, 173, 0, 0.29);
+  font-size: var(--button-bold-size);
+  color: var(--theme-gray-600);
+  font-family: var(--font-font-awesome-5-free);
+}
+.header,
+.orderCard,
+.titleOrderCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.titleOrderCard {
+  width: 856px;
+  flex-direction: column;
+  gap: var(--gap-13xl);
+  flex-shrink: 0;
+  z-index: 1;
+}
+.header {
+  position: absolute;
+  top: 76px;
+  left: 1px;
+  width: 100%;
+  flex-direction: row;
+  padding: var(--padding-113xl) var(--padding-201xl) var(--padding-113xl-6);
+  box-sizing: border-box;
+  z-index: 3;
+  text-align: left;
+  font-size: var(--headline-1-bold-size);
+  color: var(--theme-white);
+  font-family: var(--button-bold);
+}
+@media screen and (max-width: 1225px) {
+  .header,
+  .top {
+    box-sizing: border-box;
+  }
+  .top {
+    flex-wrap: wrap;
+    padding-right: var(--padding-254xl);
+  }
+  .header {
+    padding-left: var(--padding-91xl);
+    padding-right: var(--padding-91xl);
+  }
+}
+@media screen and (max-width: 850px) {
+  .areYouStarving {
+    font-size: var(--font-size-25xl);
+    line-height: 53px;
+  }
+  .header,
+  .textField {
+    padding-right: var(--padding-173xl);
+    box-sizing: border-box;
+  }
+  .header {
+    padding-left: var(--padding-36xl);
+    padding-right: var(--padding-36xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .areYouStarving {
+    font-size: var(--font-size-7xl);
+    line-height: 35px;
+  }
+  .withinAFew {
+    font-size: var(--button-bold-size);
+    line-height: 21px;
+  }
+  .textField,
+  .top {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .titleOrderCard {
+    gap: var(--gap-base);
+  }
+  .header {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
